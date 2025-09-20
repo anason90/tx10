@@ -1,0 +1,54 @@
+.appShell {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f5f7fb 0%, #ffffff 40%);
+  color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.header {
+  padding: 3rem 2rem 1rem;
+  background: radial-gradient(circle at top left, #2563eb 0%, #1d4ed8 40%, #1e40af 100%);
+  color: #f8fafc;
+}
+
+.subtitle {
+  margin-top: 0.5rem;
+  font-weight: 300;
+  max-width: 32rem;
+}
+
+.navigation {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+.navigation a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.8;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.navigation a:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.activeLink {
+  border-bottom: 3px solid #38bdf8;
+  padding-bottom: 0.25rem;
+  opacity: 1 !important;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 2rem;
+  display: grid;
+  gap: 1.5rem;
+}
